@@ -97,12 +97,24 @@
 
 #write a program that prints all numbers from 0 to 6 except 3 and 6
 
-for i in range(7):
-    if(i==3 or i==6):
-        continue
-    else:
-        print(i,end=" ")
+# for i in range(7):
+#     if(i==3 or i==6):
+#         continue
+#     else:
+#         print(i,end=" ")
 
 
 
-#        
+#write a program to print fibonacci series between 0 to 50 
+# 0 1 1 2 3 5 8 13 21 ...
+
+n1=0
+n2=1
+
+print(n1,n2,end=" ")
+
+while (n1+n2<=50):
+    temp=n2
+    n2=n1+n2
+    n1=temp
+    print(n2,end=" ") 
