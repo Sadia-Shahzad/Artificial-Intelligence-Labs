@@ -62,7 +62,7 @@
 
 
 
-#write a program that takes a workd from user and reverse it
+# #write a program that takes a workd from user and reverse it
 
 # word=input("Enter a word:")
 
@@ -71,7 +71,7 @@
 
 
 
-#write a program to tell no of odd and even numbers in the given series
+# #write a program to tell no of odd and even numbers in the given series
 
 # num=(1,2,3,4,5,6,7,8,9)      
 # c1,c2=0,0
@@ -95,7 +95,7 @@
 
 
 
-#write a program that prints all numbers from 0 to 6 except 3 and 6
+# #write a program that prints all numbers from 0 to 6 except 3 and 6
 
 # for i in range(7):
 #     if(i==3 or i==6):
@@ -105,16 +105,64 @@
 
 
 
-#write a program to print fibonacci series between 0 to 50 
-# 0 1 1 2 3 5 8 13 21 ...
+# #write a program to print fibonacci series between 0 to 50 
+# # 0 1 1 2 3 5 8 13 21 ...
 
-n1=0
-n2=1
+# n1=0
+# n2=1
 
-print(n1,n2,end=" ")
+# print(n1,n2,end=" ")
 
-while (n1+n2<=50):
-    temp=n2
-    n2=n1+n2
-    n1=temp
-    print(n2,end=" ") 
+# while (n1+n2<=50):
+#     temp=n2
+#     n2=n1+n2
+#     n1=temp
+#     print(n2,end=" ") 
+
+
+
+
+# # Write a Python program which iterates the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+# # Sample Output : fizzbuzz
+
+# # 1
+# # 2
+# # fizz
+# # 4
+# # buzz and so on upto 50
+
+
+# for i in range (51):
+#     if(i==0):
+#         continue
+#     elif(i%3==0 and i%5!=0):
+#         print("fizz")
+#     elif (i%5==0 and i%3!=0):
+#         print("Buzz") 
+#     elif (i%3==0 and i%5==0):
+#         print("FizzBuzz")
+#     else:
+#         print(i)
+
+
+
+# #Write a Python program which takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+# # Note:
+# # i = 0,1.., m-1
+# # j = 0,1.., n-1
+
+# # Test Data: Rows = 3, Columns = 4
+# # Expected Result: [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]]
+
+
+# m=int(input("Enter the number of rows:"))
+# n=int(input("Enter the number of columns:"))
+
+# nested_list = [[0] * n for _ in range(m)]  
+
+# for i in range(m):
+#     for j in range(n):
+#         nested_list[i][j]=i*j
+
+# print(nested_list)    
+
