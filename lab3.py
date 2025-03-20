@@ -1,4 +1,4 @@
-# # #program to find the numbers multiple of 5 and 7 between 1500 and 2700 inclusive
+# #program to find the numbers multiple of 5 and 7 between 1500 and 2700 inclusive
 
 # for i in range (1499,2701):
 #     if i%5==0:
@@ -7,6 +7,11 @@
 #         print(i,"is a multiple of 7")    
 #     else:
 #         pass
+
+
+
+
+
 
 
 # #program to convert celsius into farenheit and farenheit into celsius
@@ -25,6 +30,11 @@
 
 
 
+
+
+
+
+
 # #wap to guess a number between 1 to 9
 
 # num=int(input("enter a number between 1 to 9:"))
@@ -36,6 +46,13 @@
 #         num=int(input("enter a number between 1 to 9:"))
 #     else:
 #         print("Well guessed!")    
+
+
+
+
+
+
+
 
 # #wap to print the following pattern using nestted for loop
 # # *
@@ -62,12 +79,19 @@
 
 
 
+
+
+
+
 # #write a program that takes a workd from user and reverse it
 
 # word=input("Enter a word:")
 
 # word=word[::-1]
 # print(word)
+
+
+
 
 
 
@@ -85,12 +109,18 @@
 
 
 
+
+
+
 ##print each item and its type in list
 
 # data=[1,2.3,1+2j,True,'w3resource',(0,-1),[5,12],{"class":"Six"}]
 
 # for i in range(len(data)):
 #       print(data[i]," of datatype ",type(data[i]))
+
+
+
 
 
 
@@ -102,6 +132,10 @@
 #         continue
 #     else:
 #         print(i,end=" ")
+
+
+
+
 
 
 
@@ -118,6 +152,10 @@
 #     n2=n1+n2
 #     n1=temp
 #     print(n2,end=" ") 
+
+
+
+
 
 
 
@@ -146,6 +184,12 @@
 
 
 
+
+
+
+
+
+
 # #Write a Python program which takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
 # # Note:
 # # i = 0,1.., m-1
@@ -165,4 +209,23 @@
 #         nested_list[i][j]=i*j
 
 # print(nested_list)    
+
+
+
+
+
+
+
+
+
+
+# #Write a Python program that accepts a sequence of lines as input, where a blank line indicates the end of input. The program should then print the lines as output, converting all characters to lowercase.
+
+# str1=""
+# str2=input("Enter a line:")
+# while (str2!=""):
+#     str1=str1+str2
+#     str2=input("Enter a line:")
+
+# print(str1.lower())    
 
