@@ -259,33 +259,92 @@
 
 
 
-# Write a Python program that accepts a string and calculate the number of digits and letters.
-#Sample Data : Python 3.2 
-#Expected Output :  
-#Letters 6  
-#Digits 2
+# # Write a Python program that accepts a string and calculate the number of digits and letters.
+# #Sample Data : Python 3.2 
+# #Expected Output :  
+# #Letters 6  
+# #Digits 2
 
 
-#  Take user input
-text = input("Enter a string: ")
+# #  Take user input
+# text = input("Enter a string: ")
 
-# Initialize counters
-letters = 0
-digits = 0
+# # Initialize counters
+# letters = 0
+# digits = 0
 
-#Loop through each character in the string
-for char in text:
-    if char.isdigit():
-        digits += 1
-    elif char.isalpha():
-        letters += 1
+# #Loop through each character in the string
+# for char in text:
+#     if char.isdigit():
+#         digits += 1
+#     elif char.isalpha():
+#         letters += 1
 
-# Step 4: Print the results
-print("Letters:", letters)
-print("Digits:",digits)
-
-
-
+# # Step 4: Print the results
+# print("Letters:", letters)
+# print("Digits:",digits)
 
 
 
+
+
+# Password Validation
+"""
+Password Rules:
+
+1. At least one uppercase letter (A-Z).
+2. At least one lowercase letter (a-z).
+3. At least one digit (0-9).
+4. At least one special character ($#@).
+5. Length must be between 6 and 16 characters.
+"""
+
+
+
+
+pswd=input("Enter your password:")
+
+if len(pswd) < 6 :
+    print("minimum length is 6")
+
+
+
+if(len(pswd) > 16) :
+   print("maximum length is 16")
+
+
+
+for char in pswd:
+    if char.isdigit()==True:
+        break
+else:
+    print("at least one digit is required")    
+
+
+
+
+for char in pswd:
+    if char.isalpha()==True:
+        if char.isupper()==True:
+            break
+else:
+    print("at least one uppercase letter is required")    
+
+   
+
+
+for char in pswd:
+    if char.isalpha()==True:
+        if char.islower()==True:
+            break
+else:
+    print("at least one lowercase letter is required")    
+
+      
+
+
+for char in pswd:
+    if char=='$' or char=='#' or char =='@':
+        break
+else:
+    print("at least one  special character (  $  or  #   or   @) is required")    
