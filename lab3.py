@@ -253,3 +253,39 @@
 
 # print(",".join(divisible_by_5))        
 
+
+
+
+
+
+
+# Write a Python program that accepts a string and calculate the number of digits and letters.
+#Sample Data : Python 3.2 
+#Expected Output :  
+#Letters 6  
+#Digits 2
+
+
+#  Take user input
+text = input("Enter a string: ")
+
+# Initialize counters
+letters = 0
+digits = 0
+
+#Loop through each character in the string
+for char in text:
+    if char.isdigit():
+        digits += 1
+    elif char.isalpha():
+        letters += 1
+
+# Step 4: Print the results
+print("Letters:", letters)
+print("Digits:",digits)
+
+
+
+
+
+
