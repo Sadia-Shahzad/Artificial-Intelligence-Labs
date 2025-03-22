@@ -218,7 +218,6 @@
 
 
 
-
 # #Write a Python program that accepts a sequence of lines as input, where a blank line indicates the end of input. The program should then print the lines as output, converting all characters to lowercase.
 
 # str1=""
@@ -228,4 +227,29 @@
 #     str2=input("Enter a line:")
 
 # print(str1.lower())    
+
+
+
+
+
+
+# #Write a Python program which accepts a sequence of comma separated 4 digit 
+# #binary numbers as its input and print the numbers that are divisible by 5 in a 
+# #comma separated sequence.
+
+# #Sample Data : 0100,0011,1010,1001,1100,1001  
+# #Expected Output : 1010
+
+# binary_numbers = input("Enter comma-separated 4 digit binary numbers: ").split(",")
+
+# divisible_by_5=[]
+
+# for binary in binary_numbers:
+#     decimal=int(binary,2)
+#     if (decimal % 5 == 0):
+#         divisible_by_5.append(binary)
+#     else:
+#         pass
+
+# print(",".join(divisible_by_5))        
 
