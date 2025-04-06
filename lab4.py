@@ -39,6 +39,7 @@ s1.push(10)
 s1.push(20)
 s1.push(30)
 
+
 try:
     popped=s1.pop()
    
@@ -55,13 +56,7 @@ except ValueError:
     print("Empty stack cannot be peeked")
 
 
-try:
-    popped=s1.pop()
-   
-except ValueError :
-    print("stack is already empty") 
-else:
-    print("Popped value is",popped)
+
 
 try:
     popped=s1.pop()
@@ -71,6 +66,9 @@ except ValueError :
 else:
     print("Popped value is",popped)
 
+
+
+
 try:
     popped=s1.pop()
    
@@ -78,11 +76,27 @@ except ValueError :
     print("stack is already empty") 
 else:
     print("Popped value is",popped)
+
+
+
+
+try:
+    popped=s1.pop()
+   
+except ValueError :
+    print("stack is already empty") 
+else:
+    print("Popped value is",popped)
+
+
+
 
 try:
     print("Top item",s1.peek())
 except ValueError:
     print("Empty stack cannot be peeked")
+
+
 
 print("Is stack empty?",s1.is_empty())
 print("Current size is ",s1.total_elements())
