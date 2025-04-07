@@ -209,3 +209,5 @@ else:
 print("Is queue empty?",q1.isempty())
 
 print("current size of the queue is ",q1.total_elements())
+
+
