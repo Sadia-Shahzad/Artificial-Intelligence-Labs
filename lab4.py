@@ -107,3 +107,105 @@
 # Q2
 # Implement queue using python
 
+#array/list implementation
+
+class Queue:
+
+    def __init__(self):
+        self.list=[]
+        self.noe=0
+        self.front=-1
+        self.rear=-1
+
+    def enqueue(self,ele):
+        if self.noe==0:
+            self.front+=1
+            self.rear+=1
+            self.list.append(ele)
+            self.noe+=1
+
+        else:
+            self.front+=1  
+            self.list.append(ele)
+            self.noe+=1
+
+
+    def dequeue(self):
+        if self.rear==-1 or self.rear > self.front :
+            raise ValueError
+        else:
+            deleted=self.list[self.rear]
+            self.rear+=1
+            self.noe-=1
+            return deleted
+        
+    def peek(self):
+        if self.front==-1 or self.rear > self.front:
+            raise ValueError
+        else:
+            return self.list[self.front]
+        
+
+    def isempty(self):
+        if self.front==-1 or self.rear > self.front:
+            return True
+        else:
+            return False
+        
+
+    def total_elements(self):
+        return self.noe
+    
+
+
+
+q1=Queue()
+
+q1.enqueue(10)
+
+q1.enqueue(20)
+
+q1.enqueue(30)
+
+
+
+try:
+    dequeued=q1.dequeue()
+except ValueError:
+    print("queue is already empty. nothing can be dequeued any further")
+else:
+    print(dequeued ,"is eliminated from our queue")
+
+
+
+try:
+    dequeued=q1.dequeue()
+except ValueError:
+    print("queue is already empty. nothing can be dequeued any further")
+else:
+    print(dequeued ,"is eliminated from our queue")
+
+
+
+try:
+    dequeued=q1.dequeue()
+except ValueError:
+    print("queue is already empty. nothing can be dequeued any further")
+else:
+    print(dequeued ,"is eliminated from our queue")
+
+
+
+
+try:
+    front=q1.peek()
+except ValueError:
+    print("No element in the queue")
+else:
+    print("the front element in the queue is",front)
+
+
+
+print("Is queue empty?",q1.isempty())
+
+print("current size of the queue is ",q1.total_elements())
